@@ -3,3 +3,171 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+
+body{
+  background: #2F1893;
+}
+
+.background{
+  /*background: url(images/Image.png);*/
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+div{
+  font-family: "DM Sans", sans-serif;
+  color:white;
+  overflow: visible;
+
+}
+.header{
+  position: absolute;
+  width: 972px;
+  height: 40px;
+  margin-top: 45px;
+  margin-left: 213px;
+  display: flex;
+  justify-content: space-between;  
+}
+
+.header h3{
+  width: 150px;
+  height: 32px;
+  margin: 7px 0px 0px 0px;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+}
+
+.header button{
+  width: 105px;
+  height: 40px;
+  background-color: #25DAC5;
+  border-radius: 100px;
+  border: none;
+  color: #FFFFFF;
+  margin-left: auto;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  text-align: center;
+}
+
+.navbar{
+  display: flex;
+  list-style-type: none;
+  gap: 25px;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: left;
+
+  margin-top: 7px;
+  padding: 0px 0px 0px 7px;
+}
+
+.navbar li a{
+  text-decoration: none;
+  color:white;
+}
+
+.text{
+  position: absolute;
+  width: 564px;
+  height: 300px;
+  margin-top: 178px;
+  margin-left: 215px;
+}
+
+.text h1{
+  font-size: 72px;
+  line-height: 86px;
+  letter-spacing: 2px;
+  text-align: left;
+}
+
+.text p{
+  width: 564px;
+  height: 96px;
+  font-size: 22px;
+  line-height: 32px;
+  text-align: left;
+  letter-spacing: 1px;
+}
+
+.icon{
+  size: 50px;
+
+  top: 592px;
+  left: 215px;
+}
+
+.bootstrap{    
+ position: absolute;
+ left: 15.36%;
+ right: 66.36%;
+ top: 64.35%;
+ bottom: 12.26%;
+}
+
+.bootstrap h5{
+  width: 204px;
+  height: 26px;
+  top: 676.2px;
+  left: 216px;
+  font-size: 19px;
+  line-height: 26px;
+  text-align: left;
+  padding-top: 30px;
+
+}
+
+.bootstrap p{
+  width: 255px;
+  height: 78px;
+  top: 729.2px;
+  left: 216px;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: left;
+  padding-top: 50px;
+}
+
+.html{   
+ position: absolute;
+ left: 36.79%;
+ right: 44.93%;
+ top: 64.35%;
+ bottom: 15.09%;
+}
+
+.html h5{
+  width: 141px;
+  height: 26px;
+  top: 676.2px;
+  left: 516px;
+  font-size: 19px;
+  line-height: 26px;
+  text-align: left;
+  padding-top: 30px;
+}
+
+.html p{
+  width: 255px;
+  height: 52px;
+  top: 729.2px;
+  left: 516px;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: left;
+  padding-top: 50px;
+}
+
+.macbook{
+  position: absolute;
+  width: 580px;
+  height: 580px;
+  top: 178px;
+  right: 0px;
+}
