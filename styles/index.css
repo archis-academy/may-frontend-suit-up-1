@@ -3,3 +3,54 @@
   padding: 0;
   box-sizing: border-box;
 }
+.back {
+  background-image: url("/images/Image.png");
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+}
+.wrapper {
+  max-width: 1350px;
+  margin: 0 auto;
+  position: relative;
+}
+.homepage-header-container {
+  width: 100;
+}
+.header-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-box {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-lists {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  margin-top: 24px;
+}
+.navbar-lists a {
+  color: white;
+  text-decoration: none;
+}
+.navbar-lists a:hover {
+  color: gray;
+}
+.buy-button {
+  background-color: #25dac5;
+  border: none;
+  color: #ffff;
+  padding: 12px 18px;
+  border-radius: 24px;
+}
+.Kartlar {
+  display: flex;
+  justify-content: center;
+}
