@@ -10,45 +10,41 @@ body{
 }
 
 .background{
-  /*background: url(images/Image.png);*/
-  position: absolute;
-  width: 100%;
-  height: 100%;
+  background: url("");  
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 div{
   font-family: "DM Sans", sans-serif;
   color:white;
   overflow: visible;
+  max-width: 1350px;
+  margin: auto;
 
 }
 .header{
-  position: absolute;
-  width: 972px;
-  height: 40px;
-  margin-top: 45px;
-  margin-left: 213px;
+  max-width: 1350px;
+  padding-top: 45px;
   display: flex;
-  justify-content: space-between;  
+  justify-content: space-between;   
+  align-items: center;
 }
 
 .header h3{
-  width: 150px;
-  height: 32px;
-  margin: 7px 0px 0px 0px;
   font-weight: 700;
   font-size: 24px;
   text-align: center;
 }
 
 .header button{
-  width: 105px;
-  height: 40px;
+  padding: 15px 25px;
   background-color: #25DAC5;
   border-radius: 100px;
   border: none;
   color: #FFFFFF;
-  margin-left: auto;
   font-size: 18px;
   font-weight: 500;
   line-height: 26px;
@@ -73,9 +69,7 @@ div{
 }
 
 .text{
-  position: absolute;
-  width: 564px;
-  height: 300px;
+  max-width: 564px;
   margin-top: 178px;
   margin-left: 215px;
 }
@@ -88,34 +82,27 @@ div{
 }
 
 .text p{
-  width: 564px;
-  height: 96px;
+  max-width: 564px;
   font-size: 22px;
   line-height: 32px;
   text-align: left;
   letter-spacing: 1px;
 }
 
-.icon{
-  size: 50px;
+.footer{
+  display: flex;
 
-  top: 592px;
-  left: 215px;
 }
 
 .bootstrap{    
- position: absolute;
- left: 15.36%;
- right: 66.36%;
- top: 64.35%;
- bottom: 12.26%;
+  left: 15.36%;
+  right: 66.36%;
+  top: 64.35%;
+  bottom: 12.26%;
 }
 
 .bootstrap h5{
-  width: 204px;
-  height: 26px;
-  top: 676.2px;
-  left: 216px;
+  max-width: 204px;
   font-size: 19px;
   line-height: 26px;
   text-align: left;
@@ -124,10 +111,7 @@ div{
 }
 
 .bootstrap p{
-  width: 255px;
-  height: 78px;
-  top: 729.2px;
-  left: 216px;
+  max-width: 255px;
   font-size: 16px;
   line-height: 26px;
   text-align: left;
@@ -135,7 +119,6 @@ div{
 }
 
 .html{   
- position: absolute;
  left: 36.79%;
  right: 44.93%;
  top: 64.35%;
@@ -143,10 +126,7 @@ div{
 }
 
 .html h5{
-  width: 141px;
-  height: 26px;
-  top: 676.2px;
-  left: 516px;
+  max-width: 141px;
   font-size: 19px;
   line-height: 26px;
   text-align: left;
@@ -155,19 +135,21 @@ div{
 
 .html p{
   width: 255px;
-  height: 52px;
-  top: 729.2px;
-  left: 516px;
   font-size: 16px;
   line-height: 26px;
   text-align: left;
   padding-top: 50px;
 }
 
-.macbook{
+.mac{
   position: absolute;
-  width: 580px;
-  height: 580px;
-  top: 178px;
   right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -1;
+
+}
+
+.macbook{
+  max-width: 580px;  
 }
