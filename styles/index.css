@@ -9,8 +9,9 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
+  padding: 0 20px;
   position: relative;
   z-index: 0;
   background-color: rgba(47, 24, 147);
@@ -19,12 +20,17 @@
   color:white;
 }
 
+.content{
+  max-width: 1350px;
+  margin: auto;
+}
+
 .header{
+  max-width: 1350px;
   padding-top: 45px;
   display: flex;
-  justify-content: center;   
+  justify-content: space-between;
   align-items: center;
-  gap: 20%;
   flex-wrap: wrap;
 }
 
@@ -32,6 +38,12 @@
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
+  max-width: 500px;
+  flex: 1;
+}
+
+.header-logo{
+  object-fit: contain;
 }
 
 .button{
@@ -41,16 +53,17 @@
   border: none;
   color: #FFFFFF;
   font-size: 18px;
-  font-weight: 500;
   line-height: 25px;
-  text-align: center;
   letter-spacing: 1px;
 }
 
 .list{
+  max-width: 370px;
+  flex: 1;
+  justify-content: space-between;
   display: flex;
   list-style-type: none;
-  gap: 50px;
+  gap: 10px;
   font-size: 18px;
   line-height: 26px;
   flex-wrap: wrap;
@@ -62,13 +75,12 @@
 }
 
 .text{
-  max-width: 564px;
   margin-top: 90px;
-  margin-left: 215px;
-  /*transform: translate(40%);*/
+  max-width: 564px;
 }
 
 .text-h1{
+  max-width: 526px;
   font-size: 72px;
   line-height: 86px;
   letter-spacing: 2px;
@@ -82,11 +94,11 @@
 }
 
 .footer{
+  max-width: 556px;
   display: flex;
   margin-top: 130px;
   gap: 35px;
   flex-wrap: wrap;
-  margin-left: 215px;
 }
 
 .card-h5{
@@ -101,7 +113,7 @@
   line-height: 30px;
 }
 
-.mac{
+.image-container{
   position: absolute;
   right: 0px;
   top: 50%;
@@ -112,4 +124,35 @@
 
 .macbook{
   width: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 720px) {
+  .list{
+    display: none;
+  }
+}
+
+/* Tablet için macbook boyutu */
+@media (min-width: 740px) and (max-width: 1020px) {
+  .image-container {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+    max-width: 35%;
+  }
+
+  .macbook {
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+/* Küçük cihazlar (Mobil) için */
+@media (max-width: 739px) {
+  .image-container {
+    display: none;
+  }
 }
