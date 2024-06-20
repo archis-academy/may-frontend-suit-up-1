@@ -3,7 +3,20 @@
   padding: 0;
   box-sizing: border-box;
 }
+.project-admin-title{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: rgba(54, 43, 137, 0.5);
+  padding: 50px 20px;
+}
+.admin-title{
+  font-size: clamp(24px , 9vw , 50px);
+  font-weight: 800;
+  font-family: "DM Sans", sans-serif;
+  color: white;
 
+}
 body {
   font-family: "DM Sans", sans-serif;
   color: #fff;
