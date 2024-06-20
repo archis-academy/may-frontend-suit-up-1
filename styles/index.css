@@ -4,6 +4,21 @@
   box-sizing: border-box;
 }
 
+.project-admin-title{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: rgba(47, 24, 147);
+  padding: 30px 20px;
+}
+
+.admin-title{
+  font-size: clamp(24px, 9vw, 50px);
+  font-family: "DM Sans", sans-serif;
+  font-weight: 800;
+  color: white;
+}
+
 .background{
   background: url("/images/Image.png");  
   background-repeat: no-repeat;
