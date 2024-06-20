@@ -126,6 +126,7 @@
   object-fit: contain;
 }
 
+/* Küçük ekranlarda listenin kapanması */
 @media (max-width: 720px) {
   .list{
     display: none;
