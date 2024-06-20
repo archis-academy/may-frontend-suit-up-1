@@ -3,3 +3,167 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.project-admin-title{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: rgba(47, 24, 147);
+  padding: 30px 20px;
+}
+
+.admin-title{
+  font-size: clamp(24px, 9vw, 50px);
+  font-family: "DM Sans", sans-serif;
+  font-weight: 800;
+  color: white;
+}
+
+.background{
+  background: url("/images/Image.png");  
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+  padding: 0 20px;
+  position: relative;
+  z-index: 0;
+  background-color: rgba(47, 24, 147);
+
+  font-family: "DM Sans", sans-serif;
+  color:white;
+}
+
+.container{
+  max-width: 1350px;
+  margin: auto ;
+}
+
+.header{
+  max-width: 1350px;
+  padding-top: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header-navbar{
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  max-width: 500px;
+  flex: 1;
+}
+
+.header-logo{
+  object-fit: contain;
+}
+
+.button{
+  padding: 10px 20px;
+  background-color: #25DAC5;
+  border-radius: 100px;
+  border: none;
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+
+.list{
+  max-width: 370px;
+  flex: 1;
+  justify-content: space-between;
+  display: flex;
+  list-style-type: none;
+  gap: 10px;
+  font-size: 18px;
+  line-height: 26px;
+  flex-wrap: wrap;
+}
+
+.list-a{
+  text-decoration: none;
+  color:white;
+}
+
+.text{
+  margin-top: 90px;
+  max-width: 564px;
+}
+
+.text-h1{
+  font-size: clamp(35px, 9vw, 72px);
+  line-height: clamp(40px, 9vw, 86px);
+  letter-spacing: 2px;
+}
+
+.text-p{
+  margin-top: clamp(15px, 9vw, 30px);
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 1px;
+  max-width: 600px;
+}
+
+.footer{
+  display: flex;
+  margin-top: 130px;
+  gap: 35px;
+  flex-wrap: wrap;
+}
+
+.card-h5{
+  max-width: 204px;
+  font-size: 19px;
+  line-height: 50px;
+}
+
+.card-p{
+  max-width: 255px;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.image-container{
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -1;
+  max-width: 580px;
+}
+
+.macbook{
+  margin-top: 50px;
+  width: 100%;
+  object-fit: contain;
+}
+
+/* Küçük ekranlarda listenin kapanması */
+@media (max-width: 720px) {
+  .list{
+    display: none;
+  }
+}
+
+/* Tablet için macbook boyutu */
+@media (min-width: 830px) and (max-width: 1020px) {
+  .image-container {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+    max-width: 35%;
+  }
+}
+
+/* Küçük cihazlar için macbook boyutu */
+@media (max-width: 829px) {
+  .image-container {
+    display: none;
+  }
+}
